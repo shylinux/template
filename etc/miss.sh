@@ -4,10 +4,11 @@
 [ "$ISH_CONF_PRE" != "" ] || source ./.ish/plug.sh || source ~/.ish/plug.sh
 require miss.sh
 
+ish_miss_prepare_develop
 ish_miss_prepare_compile
 ish_miss_prepare_install
 
-ish_miss_prepare_volcanos
+# ish_miss_prepare_volcanos
 ish_miss_prepare_learning
 # ish_miss_prepare_icebergs
 # ish_miss_prepare_toolkits
@@ -35,7 +36,5 @@ ish_ctx_dev_git_prepare
 require misc/vim/vim.sh
 ish_ctx_dev_vim_prepare
 
-ish_miss_prepare_develop
 make
-
 ish_miss_prepare_session miss
