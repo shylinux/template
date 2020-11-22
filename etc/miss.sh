@@ -28,12 +28,11 @@ require base/cli/cli.sh
 ish_ctx_cli_prepare
 
 require misc/tmux/tmux.sh
-ish_ctx_dev_tmux_prepare
-
-require misc/git/git.sh
-ish_ctx_dev_git_prepare
-
 require misc/vim/vim.sh
+require misc/git/git.sh
+
+ish_ctx_dev_tmux_prepare
+ish_ctx_dev_git_prepare
 ish_ctx_dev_vim_prepare
 
 make
